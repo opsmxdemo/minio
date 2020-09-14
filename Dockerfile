@@ -14,8 +14,8 @@ RUN  \
 FROM alpine:3.12
 
 ENV MINIO_UPDATE off
-ENV MINIO_ACCESS_KEY_FILE=access_key \
-    MINIO_SECRET_KEY_FILE=secret_key \
+ENV MINIO_ACCESS_KEY_FILE=spinnakeradmin \
+    MINIO_SECRET_KEY_FILE=spinnakeradmin \
     MINIO_KMS_MASTER_KEY_FILE=kms_master_key \
     MINIO_SSE_MASTER_KEY_FILE=sse_master_key
 
