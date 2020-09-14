@@ -10,7 +10,7 @@ RUN  \
      yum  install -y  git && \
      yum install -y golang && \
      git clone https://github.com/minio/minio && cd minio && \
-     git checkout master && go -v -ldflags "$(go run buildscripts/gen-ldflags.go)"
+     git checkout master && $(go run buildscripts/gen-ldflags.go)
 
 FROM alpine:3.12
 
