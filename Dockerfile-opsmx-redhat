@@ -1,4 +1,4 @@
-FROM golang:1.14-alpine as builder
+FROM registry.access.redhat.com/ubi8/ubi
 
 LABEL maintainer="MinIO Inc <dev@min.io>"
 
